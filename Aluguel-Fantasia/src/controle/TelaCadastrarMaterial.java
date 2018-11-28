@@ -75,7 +75,7 @@ public class TelaCadastrarMaterial implements Initializable {
     private void initComboBoxTipos() {
     	
     	ObservableList<Label> tipos = FXCollections.observableArrayList();
-    	ITiposUsuario tiposUsuarios = new TiposUsuarios();
+    	ITiposMaterial tiposUsuarios = new TiposMateriais();
     	ArrayList<String> tiposUser = tiposUsuarios.getTipos();
     	for (int i = 0; i < tiposUser.size(); i++) {
     		tipos.add(new Label(tiposUser.get(i)));
