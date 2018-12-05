@@ -149,13 +149,13 @@ public class TelaPrincipalClass implements Initializable {
 	@FXML
     void loadRegistrarEmprestimo(ActionEvent event) {
 		System.out.println("testes");
-		loadWindow("src/view/TelaRealizarEmprestimo.fxml"); 
+		loadWindow("Aluguel-Fantasia/src/view/TelaRealizarEmprestimo.fxml"); 
     }
 	
 	@FXML
     void loadEncerrarEmprestimo(ActionEvent event) {
 		
-		loadWindow("src/view/TelaEncerrarEmprestimo.fxml"); 
+		loadWindow("Aluguel-Fantasia/src/view/TelaEncerrarEmprestimo.fxml"); 
     }    
 	
 	@FXML
@@ -169,13 +169,13 @@ public class TelaPrincipalClass implements Initializable {
 	@FXML
     void loadCadastrarUsuario(ActionEvent event) {
 		
-		loadWindow("src/view/TelaCadastrarUsuario.fxml");
+		loadWindow("Aluguel-Fantasia/src/view/TelaCadastrarUsuario.fxml");
     }
     
     @FXML
     void loadCadastrarMaterial(ActionEvent event) {		
 
-	    loadWindow("src/view/TelaCadastrarMaterial.fxml");
+	    loadWindow("Aluguel-Fantasia/src/view/TelaCadastrarMaterial.fxml");
     }    
     
     void loadWindow(String location) {
