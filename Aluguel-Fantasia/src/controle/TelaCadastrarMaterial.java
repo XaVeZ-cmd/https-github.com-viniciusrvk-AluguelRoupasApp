@@ -36,7 +36,7 @@ public class TelaCadastrarMaterial implements Initializable {
     @FXML
     private ComboBox<Label> tiposComboBox;
     @FXML
-    private JFXTextArea descricaoTxtArea;
+    private JFXTextField precoTxt;
     
     @FXML
     private JFXButton saveBtn;
@@ -55,17 +55,17 @@ public class TelaCadastrarMaterial implements Initializable {
 		
 		String toolId = idTxt.getText();
 		String toolTipo = tiposComboBox.getSelectionModel().getSelectedItem().getText();
-		String toolDescricao = descricaoTxtArea.getText();
+		float toolDescricao = Float.parseFloat(precoTxt.getText());
 		
-		if (toolId.isEmpty() || toolTipo.isEmpty() || toolDescricao.isEmpty()) {		
+		if (toolId.isEmpty() || toolTipo.isEmpty()) {		
 			
 			emptyFieldAlert();
 			return ;
 		}
 		
 		Material material = new MaterialConc(Integer.parseInt(toolId));
-		/*((MaterialConc) material).set_aleatorio(toolTipo);*/
-		material.set_descricao(toolDescricao);
+		/*.set_aleatorio(toolTipo);*/
+		((MaterialConc) material).setPreco(toolDescricao);
 		material.set_nome(toolTipo);
 		MaterialControle materialControle = MaterialControle.getInstance();
 		materialControle.cadastrar(material);

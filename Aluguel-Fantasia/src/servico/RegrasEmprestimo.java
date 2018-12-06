@@ -4,6 +4,7 @@ import controle.TelaAlertaErro;
 import dao.EmprestimoDAO;
 import modelo.Emprestimo;
 import modelo.Material;
+import modelo.MaterialConc;
 import modelo.Usuario;
 
 public class RegrasEmprestimo extends AbsRegrasEmprestimo{
@@ -15,8 +16,8 @@ public class RegrasEmprestimo extends AbsRegrasEmprestimo{
 			return false;
 		}else {
 			for (Emprestimo emprestimo : emprestimoDAO.get_emprestimos()) {
-				if(emprestimo.get_material() == material) {
-					new TelaAlertaErro("Custa: "+(emprestimo.get_prazo()*20));
+				if(emprestimo.get_material().equals( material)) {
+					new TelaAlertaErro("Custa: "+(emprestimo.get_prazo()* ((MaterialConc) material).getPreco()));
 				}
 			}
 			return true;
