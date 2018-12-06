@@ -60,17 +60,17 @@
                </font></Hyperlink>
          </children>
       </AnchorPane>
-      <Label layoutX="86.0" layoutY="132.0" text="Bem-vindo ao " textFill="#ddd3d3">
+      <Label layoutX="86.0" layoutY="132.0" text="Bem-vindo " textFill="#ddd3d3">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <Label layoutX="280.0" layoutY="131.0" text="DGEOtools" textFill="#ddd3d3">
+      <Label layoutX="280.0" layoutY="131.0" text="Fantasias LTDA" textFill="#ddd3d3">
          <font>
             <Font name="System Bold" size="32.0" />
          </font>
       </Label>
-      <Label layoutX="86.0" layoutY="178.0" text="O Sistema de Gerenciamento de Empréstimo de Ferramentas&#10;do Departamento de Geologia da UFRN." textFill="#a49999" />
+      <Label layoutX="86.0" layoutY="178.0" text="O Sistema de Gerenciamento de Empréstimo de Fantasias&#10;" textFill="#a49999" />
       <Label fx:id="exitLabel" layoutX="947.0" onMouseClicked="#exitLabelAction" text="X" textFill="#eee4e4">
          <font>
             <Font name="System Bold" size="26.0" />

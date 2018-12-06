@@ -6,7 +6,7 @@ public class TiposMateriais implements ITiposMaterial{
 	@Override
 	public ArrayList<String> getTipos() {
 		ArrayList<String> ans = new ArrayList<String>();
-		ans.add("Faltasia");
+		ans.add("Fantasia");
 		return ans;
 	}
 }

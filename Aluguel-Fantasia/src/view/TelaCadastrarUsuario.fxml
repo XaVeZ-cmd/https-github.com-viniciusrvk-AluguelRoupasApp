@@ -33,7 +33,7 @@
       <Pane layoutY="57.0" prefHeight="357.0" prefWidth="455.0" style="-fx-background-color: #CCC9BF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="57.0">
          <children>
             <JFXComboBox fx:id="tipoComboBox" labelFloat="true" layoutX="143.0" layoutY="26.0" prefHeight="30.0" prefWidth="170.0" promptText="Tipo de Usuário:" styleClass="jfx-combo-box" stylesheets="@ferramenta.css" />
-            <JFXTextField fx:id="matriculaTxt" labelFloat="true" layoutX="14.0" layoutY="97.0" prefHeight="30.0" prefWidth="170.0" promptText="Nº Matrícula">
+            <JFXTextField fx:id="matriculaTxt" labelFloat="true" layoutX="14.0" layoutY="97.0" prefHeight="30.0" prefWidth="170.0" promptText="Nº Identidade">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
